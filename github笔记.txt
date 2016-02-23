@@ -1,0 +1,64 @@
+
+
+ssh-mydemo
+
+--生成ssh key 
+ssh-keygen -t rsa -C "570613840@qq.com"
+
+--把一个已有的本地仓库与之关联
+git remote add origin git@github.com:michaelliao/learngit.git
+
+--push 上传
+git push -u origin master
+
+--clone
+git clone git@github.com:michaelliao/gitskills.git
+
+mkdir FileName
+cd FileName
+pwd
+
+git init 
+
+
+$ git add readme.txt
+$ git commit -m "append GPL"
+git log
+$ git log --pretty=oneline
+
+--修改状态
+git status
+
+--操作日志
+git reflog
+
+--git状态
+git status
+
+--恢复到上个版本
+git reset --hard head^
+
+git reset --hard head~100
+
+global 
+
+--比较
+git diff FileName
+
+--撤销修改
+git reset head FileName
+git checkout -- FileName
+
+
+cat 
+
+
+
+
+------------------linux命令
+
+目录下隐藏的文件和文件夹
+ls -lat
+
+上一层目录
+cd ..
